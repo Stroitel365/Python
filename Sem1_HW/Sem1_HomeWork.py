@@ -14,18 +14,18 @@
 
 # # Напишите программу для проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
 #
-# x_var = [False, True]
-# y_var = [False, True]
-# z_var = [False, True]
-# flag = None
-# for i in x_var:
-#     for j in y_var:
-#         for k in z_var:
-#             if (not (i or j or k)) == ((not i) and (not j) and (not k)):
-#                 flag = True
-#             else:
-#                 flag = False
-# print('¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z is', flag)
+x_var = [False, True]
+y_var = [False, True]
+z_var = [False, True]
+flag = []
+for i in x_var:
+    for j in y_var:
+        for k in z_var:
+            if (not (i or j or k)) == ((not i) and (not j) and (not k)):
+                flag.append(True)
+            else:
+                flag.append(False)
+print('¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z is', flag)
 
 # # Напишите программу, которая принимает на вход координаты точки (X и Y),
 # # причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка (или на какой оси она находится).
