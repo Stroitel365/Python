@@ -2,21 +2,21 @@ import sys
 
 sys.path.append('../')
 
-# import  Functions as f
+import  Functions as f
 
 """
 задайте строку из набора чисел. 
 напишите программу, которая покажет большее и меньшее число. 
 в качестве символа-разделителя используйте пробел.
 """
-#
-# task_list = input('введите числа через пробел: ')
-# task_list = task_list.strip().split(' ')
-# for i in range(len(task_list)):
-#     task_list[i] =int(task_list[i])
-#
-# print(f.MaxIntList(task_list))
-# print(f.MinIntList(task_list))
+
+task_list = input('введите числа через пробел: ')
+task_list = task_list.strip().split(' ')
+for i in range(len(task_list)):
+    task_list[i] =int(task_list[i])
+
+print(f.MaxIntList(task_list))
+print(f.MinIntList(task_list))
 
 """задайте два числа. напишите программу, которая найдёт нок 
 (наименьшее общее кратное) этих двух чисел.

@@ -86,11 +86,11 @@ g = f
 #
 # print(list)
 
-# list_in = [1, 2, 5, 4, 8, 6]
-#
-# list_out = [(i, i ** 2) for i in list_in if i % 2 == 0]
-#
-# print(list_out)
+list_in = [1, 2, 5, 4, 8, 6]
+
+list_out = [(i, i ** 2) for i in list_in if i % 2 == 0]
+
+print(list_out)
 #
 # f = open('f.txt', 'r')
 # data = f.read() + ' '
@@ -165,7 +165,7 @@ g = f
 # print(res)
 
 # users = ['user1', 'user2', 'user3', 'user4', 'user5']
-# ids = [4, 5, 9, 14, 7]
+# ids = [4, 5, 9, 14]
 #
 # data = list(zip(users, ids))  # работает по минимальному количеству элементов
 # print(data)

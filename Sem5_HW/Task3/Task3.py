@@ -34,3 +34,5 @@ else:
         while j < int(temp_list[i][0]):
             in_out += temp_list[i][1]
             j += 1
+with open('Out.txt', 'w') as result:
+    result.write(in_out)
